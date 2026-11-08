@@ -1,0 +1,4 @@
+{
+  "name": "PianoTiles",
+  "references": ["Unity.InputSystem", "Unity.ugui"]
+}

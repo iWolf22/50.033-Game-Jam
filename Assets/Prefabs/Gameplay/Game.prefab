@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6205919127624361408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1706300291481704283}
+  - component: {fileID: 687364833743323768}
+  - component: {fileID: 5976528799696614157}
+  - component: {fileID: 7388165336140503441}
+  - component: {fileID: 8614623417998739772}
+  m_Layer: 0
+  m_Name: Game
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1706300291481704283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6205919127624361408}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &687364833743323768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6205919127624361408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dacdc19ace84abb43b9b1ff3dd376c68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PianoTiles::PianoTiles.GameManager
+  chart: {fileID: 5976528799696614157}
+--- !u!114 &5976528799696614157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6205919127624361408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68978a2bb7ea07b4abf164aabbd89aca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PianoTiles::PianoTiles.ChartRunner
+  song: {fileID: 11400000, guid: 80efa2d2243282641bcf19b95256dd22, type: 2}
+  remix: {fileID: 11400000, guid: e13936969ad32cd4f9a8e9b5277c72b0, type: 2}
+  tilePrefab: {fileID: 2663488027707595937, guid: 32fa44b1e7079564ab933eb8cbf383f6, type: 3}
+  tileRoot: {fileID: 0}
+  laneWidth: 120
+  judgementY: 80
+--- !u!114 &7388165336140503441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6205919127624361408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84db2552da7a1ec4893185cdacc2c770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PianoTiles::PianoTiles.ScoreManager
+  game: {fileID: 687364833743323768}
+  chart: {fileID: 5976528799696614157}
+--- !u!114 &8614623417998739772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6205919127624361408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00e22df4daf28004fb5d536a92e05ee3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PianoTiles::PianoTiles.LaneInput
+  chart: {fileID: 5976528799696614157}
